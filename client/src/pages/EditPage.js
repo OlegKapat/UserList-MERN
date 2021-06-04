@@ -4,7 +4,7 @@ import { useHttp } from "../hooks/http.hook";
 import { UserCard } from "../context/Usercard";
 
 export const EditPage = () => {
-  const { request, loading } = useHttp();
+  const { request} = useHttp();
   const [user, setUser] = useState(null);
   const userId = useParams().id;
 
